@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAQAElEQVR4AexdCZwUxdV/1XPs7D27rCwsy6mAKIegIi4QNfniFQ+M+ZIYj6jxwE8/8YrnF43xBGPiFa8oGjVGjfFLYi5j/CTc6ILcgoAssMBy7Mzec3b3V6+xh9nZ7umqubZnt/Y3b7u66r1X7/2r3kwfr6slsMnfp5POmrxi4pkX1R939pz6SWc/Un/iua/Un3DOX+j+8k+nfGsbpbb6Kd9Sk9Gqky9Q6084NylPovyq6Rdy8aN+rR8LW+L7WTn1PHXlSbO4+kF+lIvXY1XW7LKB/zhWlLbh2H1y3Fnvf3rCOfPrjz/3Ubo/Z+Wk07+HY22TaQe9FgAqgGORd/ypiysn/WJRxcRtoV17VkUa974Z3Ln7ieCu3XfKbZ2XRw76v0X3Two1NI6iVBpsaIRkJHcGINzYlJQnmKBDDUe4+MO7m0Du7OKSiexvhmhLK5dMtKUNwlQumGBvsn3ZJv7jWFEahWMX3rnnHPmg/wq5o+MOuv9EYNe+t0J0rHHMceyXeiecQudCr83DnHa8FGoLl5RPvJA6/9qSion7ieT4mH4T3EwIGUW34tOPEPhqzG9WJGnBksqJexdVTnqZzotzcY7kEoacBMCKIVPHrBhz2ttK5YBm1UHepc5fCoRU5tJR0ZedESADCcCVdF78GecIDYTXlg3/2rhcWJzVAFhYNG4wdeZFxenaAAS+Sx0qpCQ+AoFkCBTSQLhU8jjWLhs6/aXFRWNrkjGn25aVAPjMe5x3UcWkuZLHvY06czUh4EzX0MzLC432RoA4wQE/Ao9n6+KKCY8sKp9QkQ17MxoAePxGJ/6dHUTdTif97dRg8Y1PQRCftBAoBCLdCRLZtqRiwu04x9LSliCcsQBY4h03XKmsXEUIPELJm9CP2BUIpIUAIaRCJdJcnGM419JSFieckQBYWj7xGypxrQQgR4P4EwhkFQFyNM41nHOZ6CbtAFhcMelaWSIfACEDMmGQ0CEQsESAzjWcczj3LHktGFIOgHo43rW4YuJzQOB5QsAB4i9/EOgDlmpzjs49nIPp3EhLKQDqx5xaFaiILgBCZvcBLIUL+YwAnYOLKyd+sLTsmJTuK3EHwLLBx09RCgs/cxS46yS3G1iIOJ1AHA4mXl0fcUiAcvo+y1aTcTuBhVfnoUHMxU9cLgBJ4pMR/md1/B3ugv9Qi4pWrT7mjGN5Y1niEVhzZN1AZ1XV+w6Pu9ZZVQGs5CgtBqmokJkf9Wr8VA7LrETcLnB6y7n6IU4HF7/TWwZSgZtLRvif/fF3VVUOjxZ7PsQ5yjOnmQPgYwBnm6/zvchBX40SCEJ4zz5mivpbQW7vYOZH3XJ7J0SoHJZZSQmEABPPWPmRT41EueyKHGgGRfjPhVmuxl8NhQZ3doTfw7nKGgQSK6OrYtIzhMB0Vn7BJxDoFQQImY5z1azvxHqmAFjsnXgTELg2UVjsCwRsiQCdq4srJjFdoLEMgCXlk06nk/9xWzoqjBIImCPw1KLKiWeaNx9qSRoAy8vGjVYd8HsgJCnfIVXiv0DARggQcIFK3lpUOmlMMquSTuyIw/0qFS6jJD4CgbxDgJ6z0kuC6ovJDDcNgKXeCbOogrpkwqJNIGB3BAghpyQ7FDIMALy1rBDygN2d47NPcPdXBIgK83BOG/lvGABLKiZdA4SMNxIQdQKBvEOAkAnanDYwvEcALIaxpUDU+w14RZVAIH8RIOpPt8BRBYkO9AgAtbLgVgAyEMSfQKBPIUCqmyqKb050qVsALKmuG+gsLbkFc1fMSCou0pLUzNqN6qVCD0huNxi1mdVJBS5weDxcMsTlBKm4kEsGJImLX/ifv+PvLC2+a/nAk6rjg6BbADhLXY/QiVpKSZuwhls6yQidNIZtdJIb1RPMhnQ6zHUayBGHA4iLU0azy8XXDyFc/FI++m+Arz5OhPQj/wvcZVJZwb0Q9yfpZXzAJeJr+U6k2Q/JKNrSBko4nJQnUV5u7wC5K8An0xWEKCbEWdgT35cSCkPU38bVjyrLXPzC//we/1Bz68X6nMdtLAAC3hAmuombXoiKoD6LAP3BK19cOXGa7mAsAIA4LPMmdCGxFQjkMwKqSmbp9scCgBA1Vqk3im3/Q8BRVgpVF5wBQ2+7BobdMbsHDb31aqi57pIe9Ua8el3tTVfCkBt+aCkz5PrLoOyk47IOevxc1wJgaemEowHIWBB//RqBoqOPhBPX/gPGvjQXht31XzD09tk9qBYDYPYlPeqNePW6IXMOBYC+b7Yd8bNbYMLfXoVxv30yY+NgrIiMPTTnAbQAkJ3SLGNGUdufEMBvYEdpca+7XHnmKVA8Prvfx/qclzRvxeGPBkN//+cZNcw2EHhGDMmuLV/NeWn1pHOGEBWmZrc3oT0fEIgc8NnGzMhBf1ZtwTm/vPKoMilE5BOBEJLV3oTyvEBg/9vv28LOYEMjtK9cn11bCCERKKqTHAQGZ7cnoT1fEPD9fQGs//a10PTqu9C68BNoW1Lfk5atgvb6td3qA1t3mLqIOtpXfAbtn6zpJoP1ieT/50LY+fCvYM03LwE1EjHVmakGSVEH0XMAaVCmFNpLj7AmFQRa/70Ctt36IKy/4BpYd95VPWjDhbNh849u71a/59nXTbtCHRu//9/w+WU3d5PB+kTaeNGNsOvxX0PU12KqL5MNCpEGScTpGOyqqgBWcn61MBQrP/I5SkvAUVTI3IcmU+QBJ5XDMitJuGBVRRlXP9R/Ln7hfxkgzvFj4igpMp2XyGfX8XcP8B4hgQrVSjAMzBSOgCor7PxUNy4+pUZlPhnkpz+DzHZhPwq1i9rHJ6Ny2aVQ/cJ/ijPFO4ZzJGoaAMhj2/EPhwZKqqoMlDs6gZWUrgCo0SgzP+pVgkFQwmE+GTrRlGCISwaBVjoDXDJAgwZtZCXhf8/xV0Nh0wBAXBWbjn+0o4v+AhAQD7+YDp9o6MsIEJUMoifB5Ii+7GS/9E04zYYAoVeB6OXQUjZuwSUQ6FsIqCp46S9A33JKeCMQYEWAfvkXiABgRUvw9UkERAD0yWEVTrEiIAKAFSnBlxcI8BopAoAXsX7Kj3d78Qmvo199HCa8Px+mN6+O0ZG/+B9TVJDvpO2LYeqm/4NpO5bCpA/fgNHP/Ayqzj/dVCaXDSIAcol2nvZVNv0EmLL8j9pTYBWnz4SCYTUpeYJBVDJlPAy86DwYO38ejHvjCcDUkpSUZUhIBECGgOyraqovuxAm/PklcA/O/P3SyrNOhSnL/hdcAwf0GnwSrqZWUFMNrITG4kpvrPzI56z0aoltWGYlZ2kxuCq8zHahXrTLVT2ASyYX/heOGQnVF50PtXOugOIJY5nss4P/ZVOPg1GP3pHVyYnzaeyLj/bAJFf+S2pUhvBBHzPhG/9wASoumbYObWEsHhlcSCva3s5sF+rGnJSor5VPJsv+V1/+HZj4wesw/L45MPzeOXDcgrdhxP03gxwOJ7Wz1/1v9sNIOvkx8zOrEUCVl888EbzfmN4Nj1z5LwG9HaaGI8BMmPmnKOz8VDdEo6DKMpcMZlxicDLbFaY+oF3UPh6ZbPo/6NJvAy4jQse426fq22fC+HeeTY6HTDGmwcnji5pB/0voL1XJpHHd7M7mziD6RdHN1xz5L84BsjiqNddfZqq9mE6uitO/Ztre2w2Fo0eamhDeux8an5gPu+Y93432v/knaPl4Gfj+9jHgQzJ6++4n58PuZ34D2G6mtGjMKLOmrNaLAMgSvIVjR4FnePKVDcpPnpyl3tNXaxYAciAI62ddDTseeAp2zn2+G2357/tgw3eug88vvRm2/+TxWBsGCwYAtm+77SFD46QiD7hrMn+ibdhZXKUUVxbFDCJQMn6spbbCo0ZY8vQWg6vCeJnY4JbtoARDKZvV8dkGU1nXEQNM27LVIAIgS8iWHHeMpWaPjdbhsTS2jzKIAMjSwBbjapMWuj0jai04GJsFW8oIiABIGbrkgsUTj07OQFslTwG4qqtoSXx6CwERAFlAvmBoDTjL2Z4z8gwXvwJZGAJmlSIAmKFiZ8S7vazchSNFALBilQ0+EQBZQLWE4fhf71acB+hI9M5WBEAWcGc5/te79YwYqhfFNgUE0hWRiNsFHno1gpXcQwaBo7iISwYTnpzeci4Zp7cM3AMHcMk4igvBXTuISyYb/pdOPpZ5XIrwhpkB/r3tv6Ok2NAH4nKlNf7JskoxoVGfh7nyX8L8i2BDI7BSeHcTyJ1dzPxBqjuyvxmiLa1cMtGWNghTOZRnJbkzAOHGJq5+Mu1/xNfKdWUHJ0SQYpRIve2/3NFpGAC4aK2cxvhjGoWhYloZ2rMvNna58l8cAlHgM/kpmWx9Ayy+P/x1JAXu+CpRziECIgAyDDbPCbDedaG4I6xDkfOtCIAMQ85zAqx37aHnAHrZ7ltHSRGMnf8Y1O2rjz0TjM/9JtLJO5cBvuzO7r7lcQDYc6qUMCTBJVruyaMrQZiwVnr8BCBOZ6Ib3fYlekECX3Z3xH+e3a3ebjsiADI4IvhIpmc0f4anJ9svhMugj/ieBx51GCw8/LnmFQGQQcSLjx0NROKH1DMyf+4FRE2uDpnB2PLvT8yabFHPP1q2MNueRrBkgBpZnk/5QHgZc8/zv4WWBcuTvvPL98FC2P4/P4d9b7xn5LJt6kQAZHAoShgyQI268+RRPhDeN9nz3OuA7wpLfMdX/P7nP7gR9jz3BsjtxvcTjHDojToRABlEPdW3mxOHAwroHXZg/RN8GUNABECmoCQEiiZYPwZp1p0nj84DzHzIx3oJ6MBJbjewEuaCAD3RY+VHPrxkht9yWGYl4qCm0UttrPzIp8m4nYBlVsqU//jtL7lcKc+BwiOHd7Nb86UX/QfJYewLnS+Qxvhr88dYMyB++rjlyn8JXxPqrKoAZvKWAS6WxMxPdTtKi0EqKmTvg8po/FSOpx9MbHN6y7n6yZT/ZXVTTIaVrbpo3FHd7O5t/yWP29BwQg/X0hl/h7fUUC9WOujc0sc7V/5L+GbF8J59wEqRA82gBILM/KgXV5OT2zu4ZGR68hTxt3LJKIEQYOId9slKmfLfUzsYxzBlwvfpxtvc2/7j2zCNnFGj0bTGP3rAZ6RWq8O5pWOQK/8lrWfxL20EUr0EqnfsyaN0CN3m3thmuk8RABlCNJUcoPiuRQDEo5G7sgiADGDN8xC8WXfOinJwmDyEYiYj6tNHQARA+hhqS55nQA14Rg3NhBqhgwMBEQAcYJmxFo8fY9YUq5fbOmJls4I4DDJDJnv1IgAygG3JROtlxH0fLrLsKR9yghzieQDLccwSg33VspwA+/+50NIBTx7kBInnASyHsX8xOMpKLfN4gl/uhK6tDZbAFObBgzHieQDLYexfDCwPwXdu3Arh3fu0t+QkQ8eTB/lA4nmAZCPYD9tYHoLv2viFhkxox25ta/ZPe/2oZO/Tsr73PAAFHHN1WEkqLtKeB2XlRz58VBCTnLDMSlKBCxweD7DyDCQWwgAAEABJREFUIx9xOQGfRcUyK2FiFysv8iX6j++9NZvQen3XlgZA/0ONTXqV6bb4mKM0n3vbf2KS2KdGZdj769/BpstvhY0XzzGlL669C/a98b+an/Hjjzk+WqXBPzy8QoyRcuW/RAjRBgcHiInoJMPH/ph4v8oy1bJBnQ6ufjDpirg4ZWgwS24XXz9p+s/yEHzXxi2ASXehxr1g9Vc46lBWaDf/v8LRCvND45IZ/1GXka2EEMA2K1vi27uNv0lgYV8YdLpcrvyXVFmGSLOfmaItbaCEw8z8qFtu7wC5K8An0xWEKCbEcdimhMIQ9bdx9ZOO/+hTgcWVm3DTAS2hD3m7Nm3DcU5KzgFezX65l/1XQsavQUK80hn/aGubqf/YhvMFKVf+S6bWiAZLBFgegu9ctymmJ9DQGCubFcTNMDNkslMvAiANXFkyQDvWHg6AEFMAiHSINIaEW1QEADdkhwVKGB6Cj/8FYLkX4MmjNYIOI5G/JREAaYxdMcMqcJ3rNsd6UOk5SuSgP7ZvVLDzq1ON7M12Xbb1iwBIFWFCLB+CxxPfYMJhT+J+YveSpwCcAyoSq8V+lhAQAZAisPhiCynJJT1U27l6I266UbBhV7d9ox3x3jAjVLJT1ycDAE9Oj371ccAViqd9uQjGvfEE4EPnmYSw+FjrFOiONQYB8KV1AOADNpm01UwX+lB98SwYO38eHF//PkxrWAzj33sBhv/kRsiVDWa25aq+zwXAgPO/CccteAsGnPuNQ3eFy0uh8qxTYfLid6Hq22dmDNfiSdYp0PHH/3rHwZ3J0yGQrzDL7wvAlOYjH7sbjlv4DgyZcwVUnX86YB6So7QEyk85CWpvuhK8p52MpvR56lMBUDR+DBz19P2mgzb62QeghOP9XaaKaEMJwzMAnesP5QBR9tjH6hwAGbN5L8B76jSYsuJPMOjK72JX3ITBM1a8H4AbtxQE+ERc1VUwmk5+yeU0FZToMfsxbz3N9Q4vM2VWzwAokQh0btzSQ5wpALKUFXrE986FY//wPLgHHdHDLtaKPvc8AOao4Jo0rOT0HloYi5Uf+fCnFROdsMxKjiIPOOlPMgu/e0g1jKcD66r0Wo6jq6oSxr/7HKAM6k7Ff8+IWnDSQ6tknQU2bwfXAC9gH/H+40vmkslhm4ceAvH4j30gaQtWVZRpfeJ+PFXRQ8Mx9BcQ9adDjqJCLvGyk6dAvP84f8wUYJtus4Nj/HWZZP7rPIlbSVVUUIJhdgpHQJUVdn6qGxefwixCnn40fvotyiJz5GP3cJ3kFh0zGlAGdafif+HokWZjGKvvXL85hlGi/4EtyR+OcdNfM8xSxV8RtJGVVIWOCx2fRP6C4bVw1DM/i9mWTkGJylzirQs/hW7+hyKm8rjytG47z/jHZEz819uNthJQIXwlJivhimFqNAqs/MinBIOACVRYZiVFG8iQZT811/4AKs/4mimoZg0oM/iaiyAV/1luVnV8tiFme6L/we07zcyK1bsGVtEAsvY/Hk+caEpnINYvtuExO14Fc3B+c8cMSSjgt2zLgmXQsoDt/QB7X36L+hGMjb8SCCRoPLyL903QZiTW8UdenYz819vMtnl9EozvoBp29/WHEeQsDb/nBiifeSKnFNBfmyMtZTrWfG7KE2C5FFo7yFSep2HMcw9pLxznkbHi9Z56Mmy95QGIfx9AYlm8H8AKxTTbC8eOgrEvPpqmFoCRD94GqItHUdFY6wDojMsCTdQd3GGRFUoFPMNq6P/0PpVnnwblX5vKrCS02/qBHV3ZqId+rBfzepvyL0DZtMlQM/tiGHbHbEvC68pDbvihJV+8LuRHufi6+PIxbz6lXedPF318Wgl1xeuOL1dfcgHET3g8UbO6ihL4Yjv92TfOp0d7gw3W9wK0xyOROYHwatcRF54FQ2+7pgeeNdddQuuvjtWzTtLWxZ/CJ2NPg/qJZ8L2u+cl9Gi8i/dWRtIgiMdqyI1XQMXp/Iejxj3kpjalAKi95SqY8NdXAAEYevtssKIhc64EnNBWfPHtQ264DGqpXHxdfBmvxGQKItQVrzu+fNST98HkpX+AsS/P1borYrkDnOTbH5WwnAMYrTY99PZrYerGf8GYFx+BYXf9Vw/c8Qup9tarY/VmQYQ26NRevw7Wn3816El6e154E7bO+anenHSL/cVjNeK+OXDM756CcfjlVOhJKmuXRu4AGPSj78GgH37HLvYntQNPRJGSMjE2Vs06A0Y+fDuUcGaAGqkP7txjVN2tLjEVAU/ah91xXTeedHcUesLc8NMneqjZ98YfIbTL2sYegl9VoK1Hzr3zqz17b7gCwEGvfQ9P46Qzl1CE6CTb8N3rAQnLmegbrzgNvPh8S1V4CTQZE6ZFh/fsT8YCiecAg6+iV6ySSvA3br/3cYjsP2go2LbsM8N61sqBF8+CYoZ0EVZ92eLjCoCykyYDHjNny5hM6ZXbO2HD92+AqK9FIyzLHV0ZUc90CTTuKTCzToMWWaGkwA141xXlcZUE79czm5vTueELaHr1XVRvSHjp1rCBo7Li1Gkc3IdYc/2fKwCIg4s9177E+tt0xW0Q2PxlbB/Lm664NbafzQKumxNtTv7QC/YftFgjCHk8Xz0d5v16He5mlHY+9ExG9RkpwyA2qrdTHdeMTnZt2y5Obb/n59Dy8bIe5rT83zL48q65PeozXRH/DHAy3cEGlkuhQzQVld+cqW0z9a9j5XrwfWC9Vmm6/XV81jMdPF2dmZbnCgB8f1PjL17KtA0Z07f/rfehaf47pvr2vvg72Pvy26btmWhIdv0/Xj9LAOgnwhUZDAB8X9vma++KNyUrZd/fPgY/w4rYWemcQ6lEXE4oqKlmpqbX/gCNv7RfEOx+6hVofGI+uKoHJPVlN+XZ/fRvOCDiY8XV3xLxdFZ6tcS++Hq8NW+luWj0CKik19UxgcuKl6Ud1yj6YvY9gCfhui1m459sBTervnBFuC/veDQ2DvH+u46oNBV3H3F47JylxeCq8MZ06PYm2+L5qdX4J8pLalSG8EEfM+E3SNNr78GKo78OW+j14l2P/xqsaPfTr8KeZ1+35IvXg/woF19nVN5y433w6fjTYccjzwIObNTXaunLjoefgU/pTZ+tNz8Ae196q4dd6XxztS5b1aP/aFuHtjBYPM4sh5PumoFQcuJE0wmjN3Ss3qj5sJdew2/85ctaOR6rnRSbtWdfDvWTz4aWhSu62Wc2/krQ+EZemN4t3vPCb3v0gf19edc8rY9tP364Wx/x/kdazBfGirQcHju5KwDR9vZueuLxMyqzjn+8rASqCpiFx0yRqJZAFj3gg/30evHOh38FVoSHTY30Gzo5X3c9jU+9Crvo4ZaVzP7f/gnwxFOzX1EAE6K0cjgCybY4kPvorxkeFiX2sfmqOyGaZKD0iZe4xUELbm3o0S9Eo4ArqsXbgzabTTJdb0FtDVT+xwx913SLa3WiD7vxS2beCz3GY9fPX4T2Fat72IX2mI0/JgkadYirtuGXE/aXSHtffBPwkjPqjad4/wHnj5FiWtdt7GQ6lvTLOV6PZZlj/HVdXOcA1MZ+8cHDk4b7n+T2tWPVei6ZAA2WZAJ46GP14A3K+/5p/fYZ5BPUEwERAD0x0Wrw16Fr8zatzPrP6BHIZLJWy6Unk9Xb8IpOlN7v0PfFlg8BEQBJ8Np228NJWns2sV4B0iVZ7gXovGZb34fZuZwZbjpo2GUBvsVGSn3aFI4xf5goss+4T0NDMlSZuicZMsDOatqWruS6Xt4Ztwoci1+B7btY2JLyZOt6fsda4+cZnGUlMObZBwGT8YbdMTuWeYplfCb72Hefg3Fv/BJGPnhrrA2zeofc8ENadxvgMxhGDkXoOSVepTJqy2adCAALdLf/5HELjsPNmF5weM+6FNTTIaxZDTlwwnQypF0YCltUJvMFn/PFdOz4TFAsD/zB+dpyKpVnnQY1110ay0rVs4FrrrsECmoHG/bcYbCGkiFjhitFAFgAGty2A/Y894YFF0AqWafB7Y2WepMxpHO5NplebMOrOS0LlmExJ7T7V6/lpJ/ETkQAJCJisL/zsRcsL4v6/7XEQDJ5VbrnAL4PFyfvIM3WLdffC3IgCNn+O/jeP6B14SfZ7sZQvwgAQ1i6V8qt7ZDsUEjpCsLeV97pLsSyR69bp5N3n+1vaDzE2n73YyyepMyDJ77b7ng0Zfl0BUUAMCK4/80/wa55z/fgxkuQ6877EeBA9mhkqEj1MAiT+/CBFoYu0mLBy8H4wDveuEtLkYGw7+8LYFXdt7WUdYPmnFSJAOCAeefc5+EzOmB4JxSDAX8VVp54XkrH/3q3QYYH5HXe+K3/X7m7+dW2pB5WTZulfQH46U03PD+It4W1LHd0Ad4s3P+7P8PmK2+Hzy+5CVK5487aHwufRNwu8IyoZSb3kEHgKC5i5kfdroEDwOkt55Jxesu05TxQnpUcxYXgrh3E1Q+v/wq9lY/JXvvf/gtgxiPaaWVfMv+j9PCKZaASeTrWb+7hZzb9d1VVAvr85T2Pwcbv3wArjz8nRjuSPFuAfKtOOp8G0AWw+pTvwuar7wRMzcCrPslwQ1zddN4k40lsS8V/CXMigg2NwEqYQyN3djHzB6nuyP5mehLZyiWD3wxhKofyrCR3BiDc2MTVT2/7n0rOfGDrDmhbsrKHn73lf7S5JTE+Y/tBm4+/OASKDVXvFFK5F+DP0t3f3kGgd3sVAdC7+Gvf4rwmiOQ3XsTM+UUAmGOTkxY81Iu2dzD3hSnXrYvrmfkFY3IEejEAkhvWn1pDDGuF6ni0fLRUex5D3xfb9BAQAZAefhmRxhNFVkW+f2Yn+5O1/77GJwLABiMaoFdKWM3w/ePfrKyCjwEBEQAMIGWbhfUXABPu8M5ztu3pT/pFANhgtFkvhfrzYJkRG8DJZYIIAC64MsScoIY1HyhbD78kmNOvdkUA2GC4WTJC8W56x2r7r7RmAzi5TJCAEJDcbmYiLhfgC9y4ZJxOIA4Hcx+omzgkIFQOy6ykybidwMqPfHbx3yofvvkvH1n61Vv+45s2weQPMcZxJDYdfwmNd1ZVADN5ywBflMbMT3Xj6sa40hiPjMZfWsxuF+0HE9uc3nI+GaeDi9+ZJf8P/vlDkykEgKtd753/jqWdveW/VFJkajuOuZ3HX8LFiHDNT1aKHGgGJRAEVn7kw9XkZHq3E8usJLd3QsTfytWPEggBHiqw9oF8dvG/6ZXfw44HnzacSLiob9fnWy2x6C3/5ZZ2Q7uxEjG28/hLaKQgeyCAyxquPeNSLe9+9zOvwbYfPwQrp54PmD9vDwvTt8JuGkQA2GxE8J1d+ODN7md+Awfe/TvgQ/k2M7FPmSMCoE8Np3CGFwERALyICf4+hYAIgD41nMIZXgREAPAiJvj7FAKSqqrm17Ay6qpQJhCwFwKqCq30F0A9YC+zhDUCgdwgQAAaJFBhf266E70IBOyFgErUJvwF2CNz4VIAAAbxSURBVGkvs4Q1AoHcIEAAaAAQaR/marCSVFykJamx8iMfvr0Pk6KwzEpSgQscHg+w8iMfcTlBKi7kksHEPpRlJeF/z/EnHrfpjEVc7Tr+UnHpAUmLAo5sUIlOMiJJgBOalbRsQKeDT8bhAOLilNHscvH1QwgXv5SK/04nYNIhK17Ih9mTJF/8p/6ByZ/mC223o/8Ot7RfAkXei2/+Y6VoSxso4TCw8iOf3N4BuJwHlllJ7gpCFBPimv3MfSmhMET9bcz8aAu+vRG3rCT87zn+uOanyfzXxsKu4x/1te6SQFb2mBkv6gUCfRkBRVWaJIkEV4Cqhvuyo8K37CIQPtBs2AHLk26GgrmopHOetERWSpNXL2hRAXL3LpxcOCf6yCkCbStWaw/tJHbauujTxCrb7KsEPp4Bm9ulQxaRfxzaiv8CAX4EovQ8bdPltwJOeDwfCDXuhabfvKu9VYdfW24kiALanNcCwBFV/pibbkUvfRWBlgXLYf2sq2H58Dqon3QWbLvlQcALBnb1V5LVwwFQ175uE4C62a7GCrsEAplFQN18aM4DaL8AqFxVifgVQCAE9XkE4ud6LABAlbWfhD7vvXCw3yNAiBr7so8FQGFLwRJVhdZ+j44AoK8j0DbDt3a57mQsAE6AlRECh86M9cb0tkJaIGBDBFT4e7xVsQDASnd5xU2OARUhV1UFmJHzq4WhzNqN6h2lJeAoKjTVaShT5AEnlTNqM6vTFuyqKOPqB3NUzPQZ1Qv/Dy2MZoSNWZ1dxt9Z5W13eqvm4FzXqVsATG1Y0KQGQ08rwTCYUjhCTxcU83YDWVx8So3KfDLIH4nwySjULmqfqe1GtikqVx8K1a/KtB8DXWb9Cv+jYIfxVwOhJ6dt/2ifPvlx2y0AtIrOAw/IHR375I5OMCKlK0CdiRq2GfFjnRIMagl0WGYlnGhKMMTVD040pTPAJQM0aFhtQj7hf76Of8d+eZd/Hs7xeOoRANN8W9tAgUfjmURZIJD3CCjwCKY+JPrRIwCQobql6zlVVbdjWVAKCAgReyGgQgPOaSOjDANgNGwNSar6MyMBUScQyDcEiKrcj3PayG7DAEDGupZ1r4GqrsOyIIFA3iKgquu1uWzigGkA0HsCiqrKl1K5ACXxEQjkIwIBCdQf4Fw2M940AFBgZsuGNURWL8OyIIFAXiGgqvRaNVxS51+X9CgmaQCgw9Nb176rgno/lgUJBKwQsEu7CuSeGS1r3rOyxzIAUMFM39qfqgC/x7IggYD9EVD/MNO/hulSPlMAoMNRX+tloMJqEH8CARsjoKqwPOJru4TVROYAOA0agk6inks7aGRVLvgEAjlFgKh7K53kHJyrrP0yBwAqnOZb2+is8l4gFXqCBTXVwErOSq+W2MbKj3zO0mJwVXiZ+0AZahe4qgdwyeBqcijLSq6BAwD7YeVHPuG/N+vj766pbpccznPH7f7EeIkKnMAGxBUAKH/S+g/rVX/r0PAB37LwQR+wULStQ1sYi4VX58GFtKLt7Uz6dRkVF8bytfLJRGUufnzjIS7ApffJshX+Z3n8D/g+iu5sHHH8qr+uxDnKQ9wBgMpP+GLBwYJ96il0wj2vYnakRhEwK0M0CrgCm1m7Yb2sAGYQGraZ9adQmQjty6zdoJ7e7DO127Bvqh8T6AzbDPQjn/Cfjoks8+HMOv6h8PN1++pPr2vb6MO5yUspBQB2gg/QzPCvvY6eGM+m5wUy1gkSCOQMAVUN49zDOZjsRpeVPSkHgK54hn/NCw5FPYN+k3Ide+nyYisQ4EZAVZsJUU/FucctmyCQdgCgvrrWtR8RNXI8gLoJ9wUJBLKGgAqf4Vyb7luXkdUMMxIA6Oz0ls93SD7fFKIqd6iq6sc6QQKBTCGAc0pV4U7J3zwd51qm9GYsANCgOmgMTPevmweKeiSoCt6J6x+JdOi8oGwhEKATfy7OqZn+NXNxjmWyo4wGgG7YzNZ1/hn+dXdBMHgUqPACdSCqt4mtQIANATUKMryMc2imf82dOKfY5Pi4shIAugkzujbvoScqs9WIMoH+hL1F68UvAgVBfJIiQL/x1deVoDzx5F1LrsI5lJQ7zcasBoBuW92eZZumfbHgIsnXPID+GpxLg+HXKsBevV1s+zcCOBe0OaGq5+Ecmelfe9nJOxZ+ngtUchIAuiN4/EZ/zv5CHbxmhm/NEAJKHajqI/QwaYPOI7b9BIFDiZUPkGh0Ks4FnBOU3sc5kksEchoA8Y7RmxcqXsqa4V979wz/mvEen7NYiijjVFn5JlGUK1RFfgDwGFCFv9IAWUMDRdxniAfQJmVDM+h1+kNjpo3dC6qi3k+iyjU4tjjGONZ0zCfTiX/v9LYNn+JcMNSTg8r/BwAA///KeJo5AAAABklEQVQDAHp+e88rnxHQAAAAAElFTkSuQmCC">
+<title>ClinSim</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="ClinSim: fármacos, ECG y RCP para enfermería, en adultos y pediatría. Segunda aplicación del proyecto ClinEscala.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: cuaderno clínico — banda superior verde con la "lectura" de una escala, columnas de texto de 65ch, tarjetas solo donde son objetos. */
+:root{
+  --bg:#f5f8f6; --surface:#ffffff; --fg:#14241f; --muted:#4f6560; --line:#d6e2dd;
+  --forest:#163f36; --teal:#1a6b66; --mint:#2f9c79; --amber:#b9790a; --danger:#b83232; --band:#163f36; --band-fg:#f7f0de;
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
+  --body:"Atkinson Hyperlegible", "Helvetica Neue", Arial, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1714; --surface:#13221e; --fg:#e4efe9; --muted:#9fb7af; --line:#24392f;
+  --forest:#7fd1b4; --teal:#5cc0b4; --mint:#5cb899; --amber:#e8a321; --danger:#f07070; --band:#102d26; --band-fg:#f7f0de; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1714; --surface:#13221e; --fg:#e4efe9; --muted:#9fb7af; --line:#24392f;
+  --forest:#7fd1b4; --teal:#5cc0b4; --mint:#5cb899; --amber:#e8a321; --danger:#f07070; --band:#102d26; --band-fg:#f7f0de; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+a{color:var(--teal);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offset:2px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+h2{font-size:clamp(1.5rem,3vw,2rem);color:var(--forest)}
+h3{font-size:1.1rem}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+nav.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--fg)}
+.brand img{width:40px;height:40px;border-radius:10px}
+.brand b{font-family:var(--display);font-size:1.25rem}
+.links{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}
+.band{background:var(--band);color:var(--band-fg)}
+.band .brand,.band .links a{color:var(--band-fg)}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding-block:56px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:800;letter-spacing:-.01em}
+.hero p.lead{font-size:1.15rem;max-width:34ch;opacity:.92;margin-top:16px}
+.hero .eyebrow{color:#9fd6c4}
+.hero > div{min-width:0}
+.reading{background:#0b211c;border:1px solid #2a5a4e;border-radius:18px;padding:20px;display:grid;gap:14px;font-family:var(--mono)}
+.reading .row{display:flex;justify-content:space-between;gap:12px;font-size:.85rem;color:#b9d3ca}
+.reading .val{font-family:var(--display);font-size:2.6rem;font-weight:800;color:#f7f0de}
+.gauge{display:grid;grid-template-columns:7fr 3fr 10fr;gap:3px;height:12px}
+.gauge span:nth-child(1){background:#5cb899;border-radius:6px 0 0 6px}.gauge span:nth-child(2){background:#e8a321}.gauge span:nth-child(3){background:#cc3838;border-radius:0 6px 6px 0}
+.gauge-wrap{position:relative}
+.marker{position:absolute;top:-5px;left:calc(45% - 11px);width:22px;height:22px;border-radius:50%;background:#fff;border:4px solid #163f36}
+.ticks{display:flex;justify-content:space-between;font-size:.7rem;color:#8fb3a7}
+.verdict{border-left:4px solid #cc3838;padding-left:12px;font-family:var(--body);font-size:.9rem;color:#f2d6d6}
+section{padding-block:56px;border-bottom:1px solid var(--line)}
+.prose{max-width:65ch;display:grid;gap:14px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px;margin-top:28px}
+.grid > div{display:grid;gap:6px;align-content:start;min-width:0}
+.grid h3{color:var(--fg)}
+.grid p{color:var(--muted)}
+.areas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:24px;border-top:1px solid var(--line)}
+.areas div{padding:12px 4px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;min-width:0}
+.areas span:last-child{font-family:var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;max-width:65ch;display:grid;gap:8px}
+.note strong{color:var(--amber)}
+.mail{font-family:var(--mono);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px;user-select:all;overflow-wrap:anywhere}
+footer{padding-block:32px;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.policy{max-width:70ch;display:grid;gap:28px;padding-block:40px}
+.policy section{padding:0;border:0;display:grid;gap:8px}
+.policy h1{font-size:clamp(2rem,5vw,2.8rem);color:var(--forest)}
+.policy h2{font-size:1.3rem}
+.tag{display:inline-block;font-family:var(--mono);font-size:.8rem;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:var(--mint)}
+dl{display:grid;gap:14px;margin:0}
+dt{font-weight:700}
+dd{margin:0;color:var(--muted)}
+.sim{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px;margin-top:28px;align-items:start}
+.monitor{background:#0b1a16;border:1px solid #24453b;border-radius:18px;padding:14px;display:grid;gap:10px;color:#e8f2ee;min-width:0}
+.monitor .bar{display:flex;justify-content:space-between;align-items:center;gap:8px;font-family:var(--mono);font-size:.78rem;color:#9fc4b8}
+.monitor .mode{font-family:var(--display);font-size:1rem;color:#5cb899;font-weight:800}
+.readouts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;text-align:center;font-family:var(--mono)}
+.readouts small{display:block;font-size:.65rem;color:#8fb3a7;letter-spacing:.06em}
+.readouts b{font-family:var(--display);font-size:1.35rem;font-variant-numeric:tabular-nums}
+.monitor canvas{width:100%;height:220px;display:block;border-radius:10px;background:#07130f}
+.legend{display:flex;gap:14px;font-size:.75rem;font-family:var(--mono)}
+.legend span::before{content:"";display:inline-block;width:14px;height:3px;margin-right:6px;vertical-align:middle;background:currentColor}
+.controls{display:grid;gap:16px;min-width:0}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{font:inherit;font-size:.9rem;padding:10px 6px;border:0;background:var(--surface);color:var(--fg);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--teal);color:#fff;font-weight:700}
+.ctl{display:grid;gap:4px}
+.ctl label{display:flex;justify-content:space-between;font-size:.9rem}
+.ctl output{font-family:var(--mono);color:var(--teal)}
+.ctl input{width:100%;accent-color:var(--teal)}
+.insight{border-left:4px solid var(--amber);padding:6px 0 6px 12px;font-size:.95rem;min-height:4.5em}
+.cta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.cta b{font-family:var(--display);color:var(--forest)}
+.cta span{color:var(--muted);font-size:.9rem}
+@media (max-width:760px){.sim{grid-template-columns:1fr}.monitor canvas{height:190px}}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-block:40px}.grid{grid-template-columns:1fr}.areas{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:no-preference){.marker{animation:settle .9s ease-out both}@keyframes settle{from{left:0}to{left:calc(45% - 11px)}}}
+
+/* ClinSim: misma estructura que ClinEscala, identidad roja sobre papel de ECG */
+:root{ --bg:#fbf7f8; --surface:#ffffff; --fg:#21151a; --muted:#6d585e; --line:#eadcdf;
+  --forest:#9c0e26; --teal:#c4122f; --mint:#c4122f; --amber:#9a5600; --danger:#b83232; --band:#c4122f; --band-fg:#ffffff;
+  --paper:#fff4f5; --grid-minor:#f6cfd5; --grid-major:#eba2ae; --trace:#21151a; --red:#c4122f; }
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){ --bg:#140d10; --surface:#1e1418; --fg:#f8eef0; --muted:#bba2a9; --line:#3a2a30;
+  --forest:#ff8c9b; --teal:#ff5268; --mint:#ff5268; --amber:#f3b451; --band:#5c0b18; --band-fg:#fff3f5;
+  --paper:#1a1013; --grid-minor:#381c23; --grid-major:#5c2a35; --trace:#ffe8ec; --red:#ff5268; color-scheme:dark }}
+:root[data-theme="dark"]{ --bg:#140d10; --surface:#1e1418; --fg:#f8eef0; --muted:#bba2a9; --line:#3a2a30;
+  --forest:#ff8c9b; --teal:#ff5268; --mint:#ff5268; --amber:#f3b451; --band:#5c0b18; --band-fg:#fff3f5;
+  --paper:#1a1013; --grid-minor:#381c23; --grid-major:#5c2a35; --trace:#ffe8ec; --red:#ff5268; color-scheme:dark }
+.band .hero .eyebrow{color:#ffd3da}
+.reading{background:#fff;border-color:#f3c3cb;color:#21151a}
+.reading .row{color:#6d585e}.reading .val{color:#c4122f}
+.reading .verdict{color:#21151a;border-left-color:#c4122f}
+.reading .calc{font-family:var(--mono);font-size:.82rem;color:#6d585e;display:grid;gap:4px}
+.ecgprev{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;display:grid;gap:10px;min-width:0}
+.ecgprev .bar{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:.78rem;color:var(--muted);flex-wrap:wrap}
+.ecgprev .bar b{font-family:var(--display);font-size:1.05rem;color:var(--red)}
+.ecgprev canvas{width:100%;display:block;border-radius:10px}
+.rhythms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.rhythms button{font:inherit;font-size:.88rem;padding:9px 6px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--fg);cursor:pointer}
+.rhythms button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+.authors{width:100%;border-collapse:collapse;font-size:.95rem}
+.authors th,.authors td{text-align:left;vertical-align:top;padding:8px 6px;border-bottom:1px solid var(--line)}
+.authors th{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tablewrap{overflow-x:auto}
+.brand img{box-shadow:0 0 0 2px rgba(255,255,255,.9)}
+</style>
+</head>
+<body>
+<div class="band"><div class="wrap"><nav class="top">
+  <a class="brand" href="clinsim.html"><img src="data:image/png;base64,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" alt=""><b>ClinSim</b></a>
+  <div class="links"><a href="clinsim.html#proyecto">Proyecto</a><a href="index.html">ClinEscala</a><a href="privacidad-clinsim.html">Privacidad</a><a href="soporte-clinsim.html">Soporte</a></div>
+</nav></div>
+<div class="wrap"><div class="hero">
+  <div>
+    <p class="eyebrow">Segunda aplicación del proyecto ClinEscala · pronto en el App Store</p>
+    <h1>Fármacos, ECG, RCP, laboratorio y anatomía para aprender enfermería con la evidencia a la vista</h1>
+    <p class="lead">ClinSim reúne la preparación y dilución de 85 fármacos con sus interacciones, un simulador de electrocardiograma, reanimación según las guías AHA 2025, pautas de evaluación, toma de muestras de laboratorio, un simulador anatómico y 315 casos clínicos, en adultos y pediatría.</p>
+  </div>
+  <div class="reading" aria-label="Ejemplo de cálculo de una infusión">
+    <div class="row"><span>NORADRENALINA · ejemplo</span><span>adulto 70 kg</span></div>
+    <div class="calc"><span>4 mg en 250 mL de SG5% = 16 mcg/mL</span><span>0,1 mcg/kg/min × 70 kg × 60 = 420 mcg/h</span></div>
+    <div class="val">26,3 mL/h</div>
+    <p class="verdict">Medicamento de alto riesgo: doble chequeo independiente y verificación con la indicación médica antes de programar la bomba.</p>
+  </div>
+</div></div></div>
+
+<div class="wrap">
+<section id="proyecto">
+  <div class="prose">
+    <p class="eyebrow">El proyecto</p>
+    <h2>Herramientas pensadas para la práctica de enfermería</h2>
+    <p>Preparar un fármaco es parte central del trabajo de enfermería, y la forma de diluir y administrar un mismo medicamento varía entre servicios y fuentes de consulta. ClinSim ordena esa información en un solo lugar: cómo se presenta, cómo se reconstituye y diluye, a qué velocidad se administra, y qué dice su farmacología.</p>
+    <p>La app se organiza en ocho módulos: fármacos con ejercicio de cálculo e interacciones, electrocardiograma, reanimación cardiopulmonar, patologías, pautas de evaluación, laboratorio, simulador anatómico y casos clínicos. Cada módulo explica qué es, para qué sirve y cómo se interpreta, tiene su versión para adultos y para pediatría, y cada caso clínico enlaza el material que necesitas para resolverlo.</p>
+  </div>
+  <div class="grid">
+    <div><h3>Educación y simulación</h3><p>Está hecha para estudiar, practicar y discutir casos. Los trazados de ECG, la simulación de RCP y las ilustraciones de anatomía y laboratorio son de desarrollo propio y se declaran como simulaciones.</p></div>
+    <div><h3>Evidencia con fecha</h3><p>Cada herramienta tiene al menos cinco referencias de alto impacto publicadas entre 2020 y 2026, incluidas las guías de reanimación AHA y ERC 2025.</p></div>
+    <div><h3>Sin datos de pacientes</h3><p>No hay cuentas, publicidad ni analítica. Los casos que creas quedan en tu teléfono y nada se envía a servidores.</p></div>
+    <div><h3>La indicación médica manda</h3><p>Ninguna dosis ni cálculo reemplaza la prescripción, la ficha técnica, al químico farmacéutico ni los protocolos de tu institución.</p></div>
+  </div>
+</section>
+
+<section id="herramientas">
+  <div class="prose">
+    <p class="eyebrow">Contenido</p>
+    <h2>8 módulos, adultos y pediatría</h2>
+    <p>Fichas de fármacos con presentación, reconstitución, dilución, dosis, efecto, biodisponibilidad, farmacocinética, farmacodinamia y reacciones adversas, agrupadas en drogas vasoactivas, antibióticos, AINEs, antihipertensivos, diuréticos, anestésicos, antidepresivos, antiarrítmicos, sedoanalgesia, broncodilatadores y corticoides, insulina y electrolitos, anticoagulantes, anticonvulsivantes, antieméticos, antídotos y uterotónicos. Cada ficha indica qué no se puede administrar en conjunto.</p>
+    <p>La sección de patologías reúne hipertensión, diabetes descompensada, EPOC, asma, enfermedad renal, insuficiencia cardiaca, sepsis, síndrome coronario, convulsiones, hemorragia posparto y enfermedad tromboembólica, con valoración, cuidados de enfermería y casos clínicos.</p>
+    <p><strong>Pautas de evaluación:</strong> Norton, Downton, SAS y clasificación de lesiones por presión, con un corte ilustrado de la piel que muestra la profundidad de cada categoría. Solo se incluyen pautas de uso libre, citadas con su fuente original.</p>
+    <p><strong>Laboratorio:</strong> tubos por color con su ilustración (vacío, con sangre y centrifugado), aditivo, si anticoagula o no, exámenes, cuidados de manipulación y errores frecuentes. Incluye los frascos de hemocultivo, qué líquido traen y por qué, y un ejercicio para practicar el orden de extracción.</p>
+    <p><strong>Simulador anatómico:</strong> ocho regiones donde enfermería punciona, inyecta, monitoriza y reanima, dibujadas por capas: venas, arterias, músculos, nervios, huesos y sitios de procedimiento. Al tocar una estructura aparece qué es, su origen, inserción y función, para qué sirve en enfermería y cómo se interpreta.</p>
+    <p>La descarga incluye 3 días de prueba con la parte teórica, las pautas y el laboratorio. El ejercicio de cálculo, los simuladores y los casos clínicos forman parte del acceso completo: US$4,99 en un pago único.</p>
+  </div>
+  <div class="areas"><div><span>Fichas de fármacos</span><span>85</span></div><div><span>Grupos farmacológicos</span><span>16</span></div><div><span>Interacciones e incompatibilidades</span><span>183</span></div><div><span>Patologías</span><span>11</span></div><div><span>Pautas de evaluación</span><span>4</span></div><div><span>Tubos y frascos de laboratorio</span><span>12</span></div><div><span>Regiones anatómicas</span><span>8</span></div><div><span>Estructuras anatómicas</span><span>100</span></div><div><span>Vías en la calculadora</span><span>8</span></div><div><span>Lecciones de ECG</span><span>7</span></div><div><span>Ritmos en el simulador de ECG</span><span>19</span></div><div><span>Lecciones del curso básico de RCP</span><span>9</span></div><div><span>Casos clínicos</span><span>315</span></div><div><span>Creador de casos propios</span><span>1</span></div><div><span>Referencias bibliográficas</span><span>200+</span></div></div>
+</section>
+
+<section id="simulador">
+  <div class="prose">
+    <p class="eyebrow">Vista previa · simulador de ECG</p>
+    <h2>Elige un ritmo y mira cambiar la curva</h2>
+    <p>Esta es una muestra reducida del simulador de ClinSim. Cambia el ritmo, la frecuencia o el potasio y observa cómo responde el trazado en la derivación II, sobre papel a 25 mm/s.</p>
+  </div>
+  <div class="sim">
+    <div class="ecgprev" aria-label="Monitor simulado de electrocardiograma">
+      <div class="bar"><b id="pvName">Ritmo sinusal normal</b><span>SIMULACIÓN · no es el trazado de un paciente</span></div>
+      <canvas id="pvEcg" role="img" aria-label="Trazado de ECG simulado en derivación II"></canvas>
+    </div>
+    <div class="controls">
+      <div class="rhythms" role="group" aria-label="Ritmo">
+        <button type="button" data-r="sinus" aria-pressed="true">Sinusal</button>
+        <button type="button" data-r="fa" aria-pressed="false">FA</button>
+        <button type="button" data-r="bav3" aria-pressed="false">BAV 3.º</button>
+        <button type="button" data-r="tv" aria-pressed="false">TV</button>
+        <button type="button" data-r="fv" aria-pressed="false">FV</button>
+        <button type="button" data-r="hiperk" aria-pressed="false">Hiper K⁺</button>
+      </div>
+      <div class="ctl"><label for="pvHr">Frecuencia <output id="pvHrO">72 lpm</output></label><input id="pvHr" type="range" min="30" max="180" step="1" value="72"></div>
+      <div class="ctl"><label for="pvK">Potasio <output id="pvKO">4,2 mEq/L</output></label><input id="pvK" type="range" min="2.2" max="8.5" step="0.1" value="4.2"></div>
+      <p class="insight" id="pvInsight" aria-live="polite"></p>
+      <div class="cta"><b>Versión completa</b><span>19 ritmos, 12 derivaciones, calibrador, intervalos editables, desnivel del ST y casos clínicos · US$4,99 pago único · 3 días gratis</span></div>
+    </div>
+  </div>
+</section>
+<script>
+/* ============================================================
+   MOTOR ECG — desarrollo propio.
+   Síntesis por suma de funciones gaussianas por onda (P, Q, R,
+   S, T, U), con proyección por derivación según eje eléctrico.
+   ============================================================ */
+const ECG = (() => {
+  const FS = 250, DUR = 30;
+  const FRONT = { I:0, II:60, III:120, aVR:-150, aVL:-30, aVF:90 };
+  const PREC = { V1:0, V2:1, V3:2, V4:3, V5:4, V6:5 };
+  const LEADS = ['I','II','III','aVR','aVL','aVF','V1','V2','V3','V4','V5','V6'];
+
+  const PRESETS = {
+    sinus:   { n:'Ritmo sinusal normal', rhythm:'sinus', hr:[72,115] },
+    bradi:   { n:'Bradicardia sinusal', rhythm:'sinus', hr:[44,55] },
+    taqui:   { n:'Taquicardia sinusal', rhythm:'sinus', hr:[128,180] },
+    bav1:    { n:'BAV de 1.er grado', rhythm:'sinus', hr:[66,100], pr:[280,210] },
+    mobitz1: { n:'BAV 2.º grado Mobitz I', rhythm:'mobitz1', hr:[78,110], pr:[180,130] },
+    mobitz2: { n:'BAV 2.º grado Mobitz II', rhythm:'mobitz2', hr:[84,115], qrs:[130,100] },
+    bav3:    { n:'BAV de 3.er grado', rhythm:'bav3', hr:[36,50], qrs:[140,110] },
+    fa:      { n:'Fibrilación auricular', rhythm:'fa', hr:[105,140] },
+    flutter: { n:'Flutter auricular 2:1', rhythm:'flutter', hr:[150,150] },
+    tsv:     { n:'Taquicardia supraventricular', rhythm:'tsv', hr:[180,260] },
+    tv:      { n:'Taquicardia ventricular', rhythm:'tv', hr:[170,210], qrs:[170,120] },
+    fv:      { n:'Fibrilación ventricular', rhythm:'fv', hr:[0,0] },
+    torsades:{ n:'Torsades de pointes', rhythm:'torsades', hr:[0,0] },
+    asistolia:{ n:'Asistolia', rhythm:'asistolia', hr:[0,0] },
+    hiperk:  { n:'Hiperkalemia (K⁺ 7,2)', rhythm:'sinus', hr:[60,100], k:7.2 },
+    hipok:   { n:'Hipokalemia (K⁺ 2,6)', rhythm:'sinus', hr:[78,110], k:2.6 },
+    qtlargo: { n:'QT largo', rhythm:'sinus', hr:[60,90], qtc:[520,500] },
+    stemi_inf:{ n:'SCA con elevación del ST inferior', rhythm:'sinus', hr:[64,100], st:3, stAxis:100, stPrec:[0,0,0,0,-0.2,-0.3] },
+    stemi_ant:{ n:'SCA con elevación del ST anterior', rhythm:'sinus', hr:[92,120], st:3, stAxis:-60, stPrec:[0.7,1,1,0.8,0.3,0] }
+  };
+
+  function defaults(presetId, ped) {
+    const P = PRESETS[presetId] || PRESETS.sinus, i = ped ? 1 : 0;
+    return {
+      preset: presetId, rhythm: P.rhythm, ped: !!ped,
+      hr: P.hr[i] || 70,
+      pr: P.pr ? P.pr[i] : (ped ? 120 : 160),
+      qrs: P.qrs ? P.qrs[i] : (ped ? 70 : 90),
+      qtc: P.qtc ? P.qtc[i] : (ped ? 400 : 410),
+      pAmp: 0.15, rAmp: ped ? 1.4 : 1.2, tAmp: 0.3,
+      st: P.st || 0, stAxis: P.stAxis ?? 60, stPrec: P.stPrec || [0.3,0.5,0.6,0.6,0.5,0.4],
+      axis: ped ? 75 : 60, k: P.k || 4.2, noise: 1, conduction: 2
+    };
+  }
+
+  function rng(seed){ let s = seed >>> 0; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
+  const g = (t, mu, s) => { const x = (t - mu) / s; return Math.exp(-0.5 * x * x); };
+  const cosd = d => Math.cos(d * Math.PI / 180);
+  const sig = x => 1 / (1 + Math.exp(-x));
+
+  function kEffects(K){
+    return {
+      tMul: K > 5.5 ? 1 + (K - 5.5) * 0.9 : K < 3.5 ? Math.max(0.12, 1 - (3.5 - K) * 0.4) : 1,
+      tNarrow: K > 5.5 ? Math.max(0.5, 1 - (K - 5.5) * 0.22) : 1,
+      qrsAdd: K > 6.5 ? (K - 6.5) * 0.04 : 0,
+      prAdd: K > 6.5 ? (K - 6.5) * 0.03 : 0,
+      pMul: K > 6.5 ? Math.max(0, 1 - (K - 6.5) * 0.55) : 1,
+      u: K < 3.5 ? (3.5 - K) * 0.14 : 0,
+      st: K < 3.2 ? -0.04 * (3.5 - K) : 0
+    };
+  }
+
+  function leadFactors(lead, p){
+    if (lead in FRONT) {
+      const phi = FRONT[lead], c = cosd(p.axis - phi);
+      return { p: cosd(55 - phi), r: Math.max(c, 0) + 0.08, s: Math.max(-c, 0) * 0.9 + 0.08,
+        q: c > 0.6 ? 0.1 : 0.02, t: cosd(p.axis - 15 - phi), st: cosd(p.stAxis - phi), front: true };
+    }
+    const i = PREC[lead], ped = p.ped;
+    const R = ped ? [0.75,0.85,0.95,1.1,1.15,1.0] : [0.2,0.42,0.75,1.1,1.25,1.05];
+    const S = ped ? [0.6,1.0,0.9,0.6,0.3,0.15] : [1.1,1.4,0.9,0.5,0.25,0.12];
+    const T = ped ? [-0.4,-0.35,-0.15,0.45,0.45,0.4] : [0.08,0.5,0.6,0.55,0.45,0.35];
+    const P = [0.45,0.6,0.7,0.7,0.7,0.7];
+    return { p: P[i], r: R[i], s: S[i], q: i >= 4 ? 0.1 : 0, t: T[i], st: p.stPrec[i], front: false };
+  }
+
+  /* Programa de eventos (tiempos en s).
+     El trazo dura DUR s y se repite en bucle: cada patrón se ajusta para que
+     quepa un número entero de ciclos en DUR y el empalme sea invisible. */
+  const fit = period => DUR / Math.max(1, Math.round(DUR / period));
+  function schedule(p){
+    const ev = [], R = rng(7 + p.hr), ke = kEffects(p.k);
+    const pd = p.ped ? 0.08 : 0.10, d = p.qrs / 1000 + ke.qrsAdd, pr = p.pr / 1000 + ke.prAdd;
+    const qtFor = rr => (p.qtc / 1000) * Math.sqrt(rr);
+    const rr = p.hr > 0 ? 60 / p.hr : 1;
+    const P = t => ev.push({ type:'P', t, pd });
+    const Q = (t, rrv, vent) => ev.push({ type:'QRS', t, d: vent ? Math.max(d, 0.14) : d, qt: qtFor(Math.min(Math.max(rrv, 0.3), 2)), vent: !!vent, rr: rrv });
+    let t;
+    switch (p.rhythm) {
+      case 'sinus': {
+        const r = fit(rr), n = Math.round(DUR / r);
+        // variabilidad sinusal leve que suma cero en el ciclo completo
+        const j = Array.from({ length: n }, (_, i) => 0.02 * Math.sin(2 * Math.PI * i * 3 / n) + 0.012 * Math.sin(2 * Math.PI * i * 7 / n + 1));
+        t = 0.4; for (let i = 0; i < n; i++) { const rrv = r * (1 + j[i]); P(t - pr); Q(t, rrv); t += rrv; } break; }
+      case 'mobitz1': {
+        const r = fit(rr * 4) / 4, add = [0, 0.09, 0.15];
+        for (let i = 0, n = Math.round(DUR / r); i < n; i++) { const k = i % 4, tt = 0.2 + i * r; P(tt); if (k < 3) Q(tt + pr + add[k], r); } break; }
+      case 'mobitz2': {
+        const r = fit(rr * 3) / 3;
+        for (let i = 0, n = Math.round(DUR / r); i < n; i++) { const tt = 0.2 + i * r; P(tt); if (i % 3 !== 2) Q(tt + pr, r); } break; }
+      case 'bav3': {
+        const ar = fit(60 / (p.ped ? 125 : 82)), vr = fit(rr);
+        for (let i = 0, n = Math.round(DUR / ar); i < n; i++) P(0.1 + i * ar);
+        for (let i = 0, n = Math.round(DUR / vr); i < n; i++) Q(0.55 + i * vr, vr, d >= 0.12); break; }
+      case 'fa': {
+        t = 0.3; const start = t;
+        while (true) { const rrv = rr * (0.6 + R() * 0.85); if (t + rrv > DUR + start - rr * 0.6) { Q(t, DUR + start - t); break; } Q(t, rrv); t += rrv; }
+        break; }
+      case 'flutter': {
+        const vr = 0.2 * (p.conduction || 2); for (let i = 0, n = Math.round(DUR / vr); i < n; i++) Q(0.15 + i * vr, vr); break; }
+      case 'tsv': {
+        const r = fit(rr); for (let i = 0, n = Math.round(DUR / r); i < n; i++) Q(0.2 + i * r, r); break; }
+      case 'tv': {
+        const r = fit(rr); for (let i = 0, n = Math.round(DUR / r); i < n; i++) Q(0.2 + i * r, r, true); break; }
+      default: break;
+    }
+    return ev;
+  }
+
+  function waveVal(e, t, lf, p, ke){
+    if (e.type === 'P') {
+      const c = e.t + e.pd / 2;
+      return p.pAmp * lf.p * ke.pMul * g(t, c, e.pd / 5);
+    }
+    const o = e.t, d = e.d;
+    let v = 0;
+    if (e.vent) {
+      const pol = (lf.r - lf.s) >= 0 ? 1 : -1, mag = (0.7 + Math.abs(lf.r - lf.s)) * p.rAmp;
+      v += pol * mag * g(t, o + 0.42 * d, 0.2 * d) - pol * 0.3 * mag * g(t, o + 0.85 * d, 0.1 * d);
+      const sT = 0.085 * e.qt, Tc = o + e.qt - 2.3 * sT;
+      v += -pol * 0.45 * mag * g(t, Tc, t < Tc ? 1.5 * sT : sT);
+      return v;
+    }
+    const R = p.rAmp;
+    v += -R * lf.q * g(t, o + 0.12 * d, 0.06 * d);
+    v += R * lf.r * g(t, o + 0.42 * d, 0.11 * d);
+    v += -R * lf.s * g(t, o + 0.72 * d, 0.09 * d);
+    const sT = 0.085 * e.qt * ke.tNarrow, Tc = o + e.qt - 2.3 * sT, J = o + d;
+    const stv = (p.st * 0.1) * lf.st + ke.st;
+    if (stv) v += stv * sig((t - J) / 0.006) * (1 - sig((t - (Tc + sT)) / (0.6 * sT)));
+    v += p.tAmp * lf.t * ke.tMul * g(t, Tc, t < Tc ? 1.5 * sT : sT);
+    if (ke.u) v += ke.u * 0.6 * g(t, Tc + 2.3 * sT + 0.08, 0.035);
+    return v;
+  }
+
+  function background(t, p, lf, i){
+    const A = Math.abs(lf.p) * 0.6 + 0.4;
+    switch (p.rhythm) {
+      case 'fa': return 0.06 * A * (Math.sin(2 * Math.PI * 6.3 * t) + 0.6 * Math.sin(2 * Math.PI * 7.9 * t + 1.3) + 0.4 * Math.sin(2 * Math.PI * 4.7 * t + 2.1));
+      case 'flutter': { const s = (t * 5) % 1, tri = s < 0.78 ? s / 0.78 : 1 - (s - 0.78) / 0.22; return -0.22 * lf.p * (tri - 0.5) * 1.6; }
+      case 'fv': { const m = 0.55 + 0.25 * Math.sin(2 * Math.PI * (1 / 3) * t); const a = (0.6 + 0.4 * Math.abs(lf.r - lf.s));
+        return a * m * (0.6 * Math.sin(2 * Math.PI * 5.1 * t) + 0.35 * Math.sin(2 * Math.PI * 6.7 * t + 1) + 0.25 * Math.sin(2 * Math.PI * 3.9 * t + 2)); }
+      case 'torsades': { const env = 0.25 + 0.85 * Math.abs(Math.sin(2 * Math.PI * 0.2 * t)); return env * Math.sin(2 * Math.PI * 3.9 * t) * (Math.sin(2 * Math.PI * 0.1 * t) >= 0 ? 1 : -1) * 0.9; }
+      case 'asistolia': return 0.025 * Math.sin(2 * Math.PI * (8 / 30) * t) + 0.012 * Math.sin(2 * Math.PI * 1.7 * t);
+      default: return 0;
+    }
+  }
+
+  function build(p, lead){
+    const n = FS * DUR, y = new Float32Array(n), lf = leadFactors(lead, p), ke = kEffects(p.k);
+    const ev = p._ev || (p._ev = schedule(p));
+    for (const e of ev) {
+      const pre = 0.15, post = e.type === 'QRS' ? e.qt + 0.35 : e.pd + 0.15;
+      for (const shift of [-DUR, 0, DUR]) {
+        const t0 = e.t + shift;
+        let i0 = Math.max(0, Math.floor((t0 - pre) * FS)), i1 = Math.min(n, Math.ceil((t0 + post) * FS));
+        if (i1 <= 0 || i0 >= n) continue;
+        const ee = shift ? Object.assign({}, e, { t: t0 }) : e;
+        for (let i = i0; i < i1; i++) y[i] += waveVal(ee, i / FS, lf, p, ke);
+      }
+    }
+    const R = rng(99);
+    for (let i = 0; i < n; i++) {
+      const t = i / FS;
+      y[i] += background(t, p, lf, i);
+      y[i] += p.noise * (0.012 * (R() - 0.5) + 0.02 * Math.sin(2 * Math.PI * 0.2 * t));
+    }
+    return y;
+  }
+
+  function measures(p){
+    const ke = kEffects(p.k), ev = p._ev || (p._ev = schedule(p));
+    const q = ev.filter(e => e.type === 'QRS');
+    const out = { fc: '—', pr: '—', qrs: '—', qt: '—', qtcB: '—', qtcF: '—', eje: p.axis + '°' };
+    if (q.length > 2) {
+      const span = q[q.length - 1].t - q[0].t, rr = span / (q.length - 1);
+      out.fc = Math.round(60 / rr);
+      out.qrs = Math.round((q[0].d) * 1000);
+      const qt = (p.qtc / 1000) * Math.sqrt(Math.min(Math.max(rr, 0.3), 2));
+      out.qt = Math.round(qt * 1000);
+      out.qtcB = Math.round(qt / Math.sqrt(rr) * 1000);
+      out.qtcF = Math.round(qt / Math.cbrt(rr) * 1000);
+    }
+    if (['sinus','mobitz2'].includes(p.rhythm)) out.pr = Math.round(p.pr + ke.prAdd * 1000);
+    if (p.rhythm === 'mobitz1') out.pr = 'variable';
+    if (p.rhythm === 'bav3') out.pr = 'sin relación';
+    if (['fv','torsades','asistolia'].includes(p.rhythm)) { out.fc = '—'; out.eje = '—'; }
+    return out;
+  }
+
+  /* -------- Monitor (barrido / tira congelada) -------- */
+  class Monitor {
+    constructor(canvas, opts = {}) {
+      this.c = canvas; this.ctx = canvas.getContext('2d');
+      this.speed = 25; this.gain = 10; this.T = 0; this.paused = false; this.y = null; this.ev = [];
+      this.calipers = []; this.labels = false; this.h = opts.height || 190; this.mm = opts.mm || 4;
+      this.compact = !!opts.compact; this._raf = null; this._last = 0;
+      this.c.addEventListener('pointerdown', e => this.onTap(e));
+    }
+    setData(y, ev) { this.y = y; this.ev = ev || []; this.calipers = []; if (this.paused) this.draw(); }
+    colors() {
+      const cs = getComputedStyle(document.documentElement);
+      return { paper: cs.getPropertyValue('--paper').trim(), minor: cs.getPropertyValue('--grid-minor').trim(),
+        major: cs.getPropertyValue('--grid-major').trim(), trace: cs.getPropertyValue('--trace').trim(),
+        accent: cs.getPropertyValue('--red').trim(), muted: cs.getPropertyValue('--muted').trim() };
+    }
+    size() {
+      const dpr = window.devicePixelRatio || 1, w = this.c.clientWidth || 320;
+      if (this.c.width !== Math.round(w * dpr) || this.c.height !== Math.round(this.h * dpr)) { this.c.width = Math.round(w * dpr); this.c.height = Math.round(this.h * dpr); this.c.style.height = this.h + 'px'; }
+      this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0); this.W = w; return w;
+    }
+    pps() { return this.speed * this.mm; }
+    val(t) { if (!this.y) return 0; const n = this.y.length, i = ((Math.round(t * FS) % n) + n) % n; return this.y[i]; }
+    grid(col) {
+      const { ctx } = this, W = this.W, H = this.h, mm = this.mm;
+      ctx.fillStyle = col.paper; ctx.fillRect(0, 0, W, H);
+      ctx.lineWidth = 0.6; ctx.strokeStyle = col.minor; ctx.beginPath();
+      for (let x = 0; x < W; x += mm) { ctx.moveTo(x + 0.5, 0); ctx.lineTo(x + 0.5, H); }
+      for (let y = 0; y < H; y += mm) { ctx.moveTo(0, y + 0.5); ctx.lineTo(W, y + 0.5); }
+      ctx.stroke();
+      ctx.lineWidth = 1; ctx.strokeStyle = col.major; ctx.beginPath();
+      for (let x = 0; x < W; x += mm * 5) { ctx.moveTo(x + 0.5, 0); ctx.lineTo(x + 0.5, H); }
+      for (let y = 0; y < H; y += mm * 5) { ctx.moveTo(0, y + 0.5); ctx.lineTo(W, y + 0.5); }
+      ctx.stroke();
+    }
+    yOf(v) { return this.h * 0.58 - v * this.gain * this.mm; }
+    draw() {
+      if (!this.c.isConnected) return;
+      this.size(); const col = this.colors(), ctx = this.ctx, W = this.W, pps = this.pps();
+      this.grid(col);
+      ctx.strokeStyle = col.trace; ctx.lineWidth = 1.6; ctx.lineJoin = 'round';
+      if (!this.paused) {
+        const Ws = W / pps, head = (this.T % Ws) * pps;
+        ctx.beginPath(); let started = false;
+        for (let x = 0; x <= W; x++) {
+          if (x > head && x < head + 10) { started = false; continue; }
+          const t = x <= head ? this.T - (head - x) / pps : this.T - (head + W - x) / pps;
+          const yy = this.yOf(this.val(t));
+          if (!started) { ctx.moveTo(x, yy); started = true; } else ctx.lineTo(x, yy);
+        }
+        ctx.stroke();
+        ctx.fillStyle = col.accent; ctx.beginPath(); ctx.arc(head, this.yOf(this.val(this.T)), 3, 0, 7); ctx.fill();
+      } else {
+        const t0 = this.T - W / pps; this.t0 = t0;
+        ctx.beginPath();
+        for (let x = 0; x <= W; x++) { const yy = this.yOf(this.val(t0 + x / pps)); x ? ctx.lineTo(x, yy) : ctx.moveTo(x, yy); }
+        ctx.stroke();
+        if (this.labels) this.drawLabels(col);
+        this.drawCalipers(col);
+      }
+      // pulso de calibración
+      if (!this.compact) {
+        ctx.strokeStyle = col.accent; ctx.lineWidth = 1.4; ctx.beginPath();
+        const base = this.yOf(0), top = this.yOf(1); ctx.moveTo(4, base); ctx.lineTo(8, base); ctx.lineTo(8, top); ctx.lineTo(8 + 0.2 * pps, top); ctx.lineTo(8 + 0.2 * pps, base); ctx.lineTo(12 + 0.2 * pps, base); ctx.stroke();
+      }
+    }
+    drawLabels(col) {
+      const ctx = this.ctx, pps = this.pps(), DURs = DUR;
+      const tb = ((this.t0 % DURs) + DURs) % DURs, off = this.t0 - tb;
+      const qrs = this.ev.find(e => e.type === 'QRS' && !e.vent && e.t > tb + 0.3 && e.t + e.qt < tb + this.W / pps - 0.05);
+      if (!qrs) return;
+      const X = t => (t + off - this.t0) * pps;
+      const p = this.ev.filter(e => e.type === 'P' && e.t < qrs.t && e.t > qrs.t - 0.4).pop();
+      ctx.font = '600 11px "IBM Plex Mono", ui-monospace, monospace'; ctx.fillStyle = col.accent; ctx.strokeStyle = col.accent; ctx.lineWidth = 1.2;
+      const bracket = (a, b, y, txt) => { ctx.beginPath(); ctx.moveTo(X(a), y - 4); ctx.lineTo(X(a), y); ctx.lineTo(X(b), y); ctx.lineTo(X(b), y - 4); ctx.stroke(); ctx.fillText(txt, X(b) + 4, y + 4); };
+      const H = this.h;
+      if (p) { bracket(p.t, qrs.t, H - 40, 'PR'); ctx.fillText('P', X(p.t + p.pd / 2) - 3, this.yOf(0.45)); }
+      bracket(qrs.t, qrs.t + qrs.d, H - 27, 'QRS');
+      bracket(qrs.t, qrs.t + qrs.qt, H - 14, 'QT');
+      ctx.fillText('R', X(qrs.t + 0.42 * qrs.d) - 3, 14);
+      ctx.fillText('T', X(qrs.t + qrs.qt - 0.2 * qrs.qt) - 3, this.yOf(0.6));
+    }
+    drawCalipers(col) {
+      const ctx = this.ctx; ctx.strokeStyle = col.accent; ctx.lineWidth = 1.2; ctx.setLineDash([4, 3]);
+      this.calipers.forEach(x => { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, this.h); ctx.stroke(); });
+      ctx.setLineDash([]);
+      if (this.calipers.length === 2) {
+        const [a, b] = this.calipers, dt = Math.abs(b - a) / this.pps() * 1000;
+        const txt = `${Math.round(dt)} ms · ${(Math.abs(b - a) / this.mm).toFixed(1)} mm · ${Math.round(60000 / dt)} lpm`;
+        ctx.font = '600 12px "IBM Plex Mono", ui-monospace, monospace';
+        const w = ctx.measureText(txt).width + 12, x = Math.min(Math.max(4, (a + b) / 2 - w / 2), this.W - w - 4);
+        ctx.fillStyle = col.paper; ctx.fillRect(x, 6, w, 20); ctx.fillStyle = col.accent; ctx.fillText(txt, x + 6, 20);
+      }
+    }
+    onTap(e) {
+      if (!this.paused || !this.calOn) return;
+      const r = this.c.getBoundingClientRect(), x = e.clientX - r.left;
+      if (this.calipers.length >= 2) this.calipers = [];
+      this.calipers.push(x); this.draw();
+    }
+    start() {
+      if (this._raf) return;
+      const loop = ts => {
+        if (!this.c.isConnected) { this._raf = null; return; }
+        if (!this._last) this._last = ts;
+        const dt = Math.min(0.1, (ts - this._last) / 1000); this._last = ts;
+        if (!this.paused) this.T += dt;
+        this.draw(); this._raf = requestAnimationFrame(loop);
+      };
+      this._raf = requestAnimationFrame(loop);
+    }
+    stop() { if (this._raf) cancelAnimationFrame(this._raf); this._raf = null; this._last = 0; }
+  }
+
+  /* -------- 12 derivaciones estático -------- */
+  function draw12(canvas, p, gain = 10) {
+    const layout = [['I','aVR','V1','V4'],['II','aVL','V2','V5'],['III','aVF','V3','V6']];
+    const cs = getComputedStyle(document.documentElement), col = n => cs.getPropertyValue(n).trim();
+    const W = Math.max((canvas.parentElement || canvas).clientWidth, 720), mm = W / 255, rowH = 34 * mm, H = rowH * 4 + 6 * mm;
+    const dpr = window.devicePixelRatio || 1; canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+    canvas.width = W * dpr; canvas.height = H * dpr; const ctx = canvas.getContext('2d'); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.fillStyle = col('--paper'); ctx.fillRect(0, 0, W, H);
+    ctx.lineWidth = 0.5; ctx.strokeStyle = col('--grid-minor'); ctx.beginPath();
+    for (let x = 0; x < W; x += mm) { ctx.moveTo(x, 0); ctx.lineTo(x, H); } for (let y = 0; y < H; y += mm) { ctx.moveTo(0, y); ctx.lineTo(W, y); } ctx.stroke();
+    ctx.lineWidth = 0.9; ctx.strokeStyle = col('--grid-major'); ctx.beginPath();
+    for (let x = 0; x < W; x += 5 * mm) { ctx.moveTo(x, 0); ctx.lineTo(x, H); } for (let y = 0; y < H; y += 5 * mm) { ctx.moveTo(0, y); ctx.lineTo(W, y); } ctx.stroke();
+    const pps = 25 * mm, colW = 2.5 * pps, x0 = 5 * mm;
+    ctx.strokeStyle = col('--trace'); ctx.lineWidth = 1.2; ctx.font = '600 11px "IBM Plex Mono", ui-monospace, monospace';
+    const trace = (lead, tStart, tLen, X, Y) => {
+      const y = build(p, lead); ctx.beginPath();
+      for (let k = 0; k <= tLen * pps; k++) { const t = tStart + k / pps, v = y[Math.round(t * FS) % y.length], yy = Y - v * gain * mm; k ? ctx.lineTo(X + k, yy) : ctx.moveTo(X + k, yy); }
+      ctx.stroke(); ctx.fillStyle = col('--red'); ctx.fillText(lead, X + 3, Y - 12 * mm);
+    };
+    layout.forEach((row, r) => row.forEach((lead, c) => trace(lead, 2 + c * 2.5, 2.5, x0 + c * colW, rowH * r + rowH * 0.62)));
+    trace('II', 2, 10, x0, rowH * 3 + rowH * 0.62);
+    ctx.fillStyle = col('--muted'); ctx.fillText('25 mm/s · ' + gain + ' mm/mV · tira de ritmo DII', x0, H - 4);
+  }
+
+  return { FS, DUR, LEADS, PRESETS, defaults, build, schedule, measures, Monitor, draw12 };
+})();
+
+(function(){
+  var cv=document.getElementById('pvEcg'), mon=new ECG.Monitor(cv,{height:180});
+  var st={preset:'sinus',hr:72,k:4.2};
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var noHr={fv:1};
+  var tips={
+    sinus:'Onda P antes de cada QRS, PR constante y QRS angosto. Sube la frecuencia sobre 100 lpm para ver una taquicardia sinusal.',
+    fa:'Sin ondas P, línea de base fibrilatoria y RR irregularmente irregular. La frecuencia que ves es la respuesta ventricular.',
+    bav3:'Las P y los QRS no tienen relación: las aurículas laten más rápido que el ritmo de escape ventricular.',
+    tv:'QRS ancho, regular y rápido. Sin pulso, es un ritmo desfibrilable.',
+    fv:'Actividad caótica sin complejos organizados: ritmo de paro desfibrilable. Inicia RCP y desfibrila.',
+    hiperk:'T altas y picudas. Sube el potasio sobre 7 mEq/L para ver aplanarse la P y ensancharse el QRS.'
+  };
+  function draw(){
+    var p=ECG.defaults(st.preset,false);
+    if(!noHr[st.preset] && st.preset!=='fa' && st.preset!=='bav3') p.hr=st.hr;
+    if(st.preset==='fa') p.hr=Math.max(st.hr,60);
+    p.k=st.k; delete p._ev;
+    mon.setData(ECG.build(p,'II'),p._ev);
+    document.getElementById('pvName').textContent=ECG.PRESETS[st.preset].n;
+    var t=tips[st.preset]; if(st.k>5.5&&st.preset!=='hiperk') t+=' Con potasio alto aparecen T picudas.'; if(st.k<3.5) t+=' Con potasio bajo la T se aplana y aparece una onda U.';
+    document.getElementById('pvInsight').textContent=t;
+    if(reduce){mon.paused=true;mon.T=10;mon.draw();}
+  }
+  document.querySelectorAll('.rhythms button').forEach(function(b){b.addEventListener('click',function(){
+    st.preset=b.dataset.r; document.querySelectorAll('.rhythms button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+    var def=ECG.defaults(st.preset,false); st.hr=def.hr||st.hr; st.k=def.k; 
+    document.getElementById('pvHr').value=st.hr; document.getElementById('pvHrO').textContent=(noHr[st.preset]?'—':st.hr+' lpm');
+    document.getElementById('pvK').value=st.k; document.getElementById('pvKO').textContent=String(st.k).replace('.',',')+' mEq/L';
+    document.getElementById('pvHr').disabled=!!noHr[st.preset]||st.preset==='bav3';
+    draw();
+  });});
+  document.getElementById('pvHr').addEventListener('input',function(e){st.hr=+e.target.value;document.getElementById('pvHrO').textContent=st.hr+' lpm';draw();});
+  document.getElementById('pvK').addEventListener('input',function(e){st.k=+e.target.value;document.getElementById('pvKO').textContent=String(st.k).replace('.',',')+' mEq/L';draw();});
+  draw(); if(!reduce) mon.start();
+  window.addEventListener('resize',function(){mon.draw();});
+})();
+</script>
+
+<section id="uso">
+  <div class="note">
+    <p><strong>Uso responsable.</strong> ClinSim es una herramienta educativa para estudiantes y profesionales de enfermería. No es un dispositivo médico y no reemplaza la prescripción médica, la ficha técnica del producto, la validación del químico farmacéutico, los protocolos de tu institución ni el juicio clínico.</p>
+    <p>Las simulaciones de ECG y RCP no certifican competencias. Para certificarte en reanimación, realiza un curso acreditado con práctica en maniquí.</p>
+  </div>
+</section>
+
+<section id="autoria">
+  <div class="prose">
+    <p class="eyebrow">Autoría</p>
+    <h2>Quién la desarrolla</h2>
+    <p>Eric Poblete, Chile, autor de ClinEscala. La creación intelectual de ClinSim, su concepto pedagógico, la selección de contenidos y el diseño de los casos son del autor. Los simuladores de ECG y RCP y las ilustraciones de anatomía y laboratorio son de desarrollo propio. El desarrollo contó con asistencia de inteligencia artificial, bajo la dirección y revisión del autor; esta declaración no constituye validación científica. Sugerencias y errores son bienvenidos en la página de <a href="soporte-clinsim.html">soporte</a>.</p>
+  </div>
+</section>
+</div>
+<div class="wrap"><footer><span>ClinSim · Eric Poblete · Chile · Segunda aplicación del proyecto <a href="index.html">ClinEscala</a></span><span><a href="privacidad-clinsim.html">Política de privacidad</a> · <a href="soporte-clinsim.html">Soporte</a></span></footer></div>
+</body>
+</html>
