@@ -116,7 +116,7 @@ dd{margin:0;color:var(--muted)}
 .reading{background:#fff;border-color:#f3c3cb;color:#21151a}
 .reading .row{color:#6d585e}.reading .val{color:#c4122f}
 .reading .verdict{color:#21151a;border-left-color:#c4122f}
-.reading .calc{font-family:var(--mono);font-size:.82rem;color:#6d585e;display:grid;gap:4px}
+.reading .calc{font-family:var(--body);font-size:.9rem;line-height:1.45;color:#21151a;display:grid;gap:6px;margin:12px 0 0}.reading .calc div{margin:0}.reading .calc dt{display:inline;font-weight:700}.reading .calc dd{display:inline;margin:0;color:#3a2a30}.reading .lbl{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#6d585e;margin:16px 0 0}.reading .how{font-family:var(--mono);font-size:.8rem;color:#6d585e;margin:0 0 12px}
 .ecgprev{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;display:grid;gap:10px;min-width:0}
 .ecgprev .bar{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:.78rem;color:var(--muted);flex-wrap:wrap}
 .ecgprev .bar b{font-family:var(--display);font-size:1.05rem;color:var(--red)}
@@ -169,10 +169,16 @@ section[id]{scroll-margin-top:84px}
     <p class="lead">ClinSim reúne la preparación y dilución de 85 fármacos con sus interacciones, un simulador de electrocardiograma, reanimación según las guías de reanimación 2025, pautas de evaluación, toma de muestras de laboratorio, un simulador anatómico y 265 casos clínicos, en adultos y pediatría.</p>
   </div>
   <div class="reading" aria-label="Ejemplo de ficha de dilución">
-    <div class="row"><span>NORADRENALINA · ficha</span><span>adulto</span></div>
-    <div class="calc"><span>Presentación: ampolla de 4 mg en 4 mL</span><span>Dilución de referencia: 4 mg en 250 mL de SG5%</span></div>
+    <div class="row"><span>NORADRENALINA · Ficha educativa</span><span>Adultos</span></div>
+    <dl class="calc">
+      <div><dt>Presentación de referencia:</dt> <dd>4 mg/4 mL (confirmar si la ampolla se expresa como noradrenalina base o como bitartrato).</dd></div>
+      <div><dt>Diluyente:</dt> <dd>SG5%, según la ficha técnica del producto y el protocolo institucional.</dd></div>
+      <div><dt>Preparación:</dt> <dd>4 mg de noradrenalina base, completar hasta 250 mL de volumen final.</dd></div>
+    </dl>
+    <p class="lbl">Concentración final</p>
     <div class="val">16 mcg/mL</div>
-    <p class="verdict">Medicamento de alto riesgo: doble chequeo independiente y verificación con la indicación médica antes de programar la bomba.</p>
+    <p class="how">4 mg = 4.000 mcg ÷ 250 mL</p>
+    <p class="verdict"><strong>Medicamento de alto riesgo.</strong> Verificar concentración, presentación comercial, compatibilidad del diluyente, prescripción y programación de la bomba. Aplicar doble chequeo según protocolo institucional.</p>
   </div>
 </div></div></div>
 
